@@ -6,9 +6,9 @@ Numbers:
     - floating point: 1.67, 1., 3.14e-10, 3.0e+210
     - complex: 5 +7j
     - decimal with fixed precision: decimal.Decimal(1)
-    - fractional
-    - long integer
-    - Boolean
+    - fractional: fractions.Fraction(1, 3)
+    - long integer: 2 ** 200
+    - Boolean: True, False
 
 Operators:
     +, -, *, /, //, >>, **, etc
@@ -19,10 +19,18 @@ Mathematical functions:
 Modules with tools:
     math, random, etc
 
+OFFTOP:
+    function vs method
+    https://www.geeksforgeeks.org/difference-method-function-python/
+
     # import math
     print(math.pi)
+    math.
 
 Variables and basic expressions
+    creating variable
+    addition, subtraction, multiplication, division
+    power
 
 Comparisons - normal and complex
     X = 2
@@ -67,6 +75,8 @@ Bit level operations:
     and, or, xor, shift
 
 Decimal with fixed precision:
+    floating point arithmetic precision is limited
+
     from decimal import Decimal
     print(Decimal(10))
     print (0.1 + 0.2 - 0.3) - floating point precision is poor
